@@ -59,3 +59,42 @@
     </footer>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista niezbędnych komponentów do budowy komputera</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lista niezbędnych komponentów do budowy komputera</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="porady.html">Porady</a></li>
+                <li><a href="komponenty.html">Komponenty</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Komponenty:</h2>
+        <ul>
+            <li>Procesor</li>
+            <li>Płyta główna</li>
+            <li>Karta graficzna</li>
+            <li>Pamięć RAM</li>
+            <li>Dysk twardy lub SSD</li>
+            <li>Zasilacz</li>
+            <li>Obudowa</li>
+            <li>System chłodzenia procesora</li>
+            <li>Klawiatura i mysz</li>
+            <li>Monitor</li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2024 Budowanie Komputerów</p>
+    </footer>
+</body>
+</html>
