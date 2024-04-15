@@ -128,3 +128,30 @@
     <script src="scripts.js"></script>
 </body>
 </html>
+document.addEventListener("DOMContentLoaded", function() {
+    // Wyświetlanie aktualnej daty
+    var currentDate = new Date();
+    var formattedDate = currentDate.toLocaleDateString('pl-PL');
+    document.getElementById('date').innerText = 'Dzisiaj jest ' + formattedDate;
+
+    // Wyświetlanie informacji o imieninach
+    var namedays = {
+        "01-01": "Mieczysław, Bazyl",
+        "01-02": "Izydor, Bazyliszka",
+        "01-03": "Łukasz, Dan",
+        "01-04": "Sylwester, Eugeniusz",
+        // itd...
+        // dodaj więcej imion i dat
+    };
+
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //Styczeń to 0!
+    var currentDateFormatted = mm + '-' + dd;
+
+    if (currentDateFormatted in namedays) {
+        document.getElementById('nameday').innerText = 'Dziś imieniny obchodzą: ' + namedays[currentDateFormatted];
+    } else {
+        document.getElementById('nameday').innerText = 'Dziś nie obchodzą imieniny żadne z osób zapisanych w naszej bazie.';
+    }
+});
